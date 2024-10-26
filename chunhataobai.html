@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/taobaichothue.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="#">Về chúng tôi</a>
+            </li>
+            <li>
+              <a href="#">Thuê nhà trọ</a>
+            </li>
+            <li>
+              <a href="dangnhap.html" id="btnDT">Đăng tin cho thuê</a>
+            </li>
+            <li>
+              <a href="dangnhap.html" id="btnDN">Đăng nhập</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="create-post">
+        <h3>Tạo bài đăng</h3>
+        <form>
+          <label for="title">Tiêu đề:</label>
+          <input type="text" id="title" name="title" required>
+          
+          <label for="location">Địa điểm:</label>
+          <input type="text" id="location" name="location" required>
+          
+          <label for="description">Mô tả chi tiết:</label>
+          <textarea id="description" name="description" required></textarea>
+          
+          <label for="price">Giá thuê:</label>
+          <input type="text" id="price" name="price" required>
+          
+          <label for="image">Hình ảnh:</label>
+          <input type="file" id="image" name="image" accept="image/*" required>
+          
+          <label for="amenities">Tiện ích:</label>
+          <input type="text" id="amenities" name="amenities">
+          
+          <label for="contact">Liên hệ:</label>
+          <input type="text" id="contact" name="contact" required>
+          
+          <label for="ownership">Chứng nhận quyền sở hữu căn hộ:</label>
+          <input type="file" id="ownership" name="ownership" accept=".pdf,.doc,.docx">
+          
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2024 Nhà trọ FPOLY. Bảo lưu mọi quyền.</p>
+      </footer>
+</body>
+</html>

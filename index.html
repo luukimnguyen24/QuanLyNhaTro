@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <form>
+        <header>
+            <nav>
+                <img class="logo" src="img/logo của kiệt căn nhà1.jpg">
+                <ul>
+                    <li>
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Về chúng tôi</a>
+                    </li>
+                    <li>
+                        <a href="#">Thuê nhà trọ</a>
+                    </li>
+                    <li>
+                        <a href="dangtin.html" id="btnDT">Đăng tin cho thuê</a>
+                    </li>
+                    <li>
+                        <a href="dangnhap.html" id="btnDN">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="#" onClick="toggleMenu()">
+                            <img name="img" class="hinhdd" src="img/IMG_2332.JPG">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="chat">
+            <a href='tel:0773699825'><img src="img/hotline.png" id="hotline"></a>
+            <a href="https://chat.zalo.me/"><img src="img/zalo-logo.png" id="zalo"></a>
+            <a href="https://www.facebook.com/profile.php?id=100017313016130"><img src="img/mess.png" id="mess"></a>
+            <img src="img/chat.png" id="chatImg" onClick="khungChat()">
+        </div>
+        <div class="khungChat" id="khungChat">
+            <div class="headerKhungChat">
+                <b>Chat với nhân viên để tư vấn</b>
+                <a href="#" onClick="khungChat()">X</a>
+            </div>
+            <div class="messageContainer" id="messageContainer"></div>
+            <div class="bottomKhungChat">
+                <input type="text" id="inputMessage" placeholder="Nhập tin nhắn...">
+                <button onClick="sendMessage(event)">Gửi</button>
+            </div>
+        </div>
+        <div class="menu">
+            <ul id="menu">
+                <li><a href="#">Quản lý tài khoản</a></li>
+                <li><a href="canhoyeuthich.html">Căn hộ yêu thích</a></li>
+                <li><a href="#">Cài đặt tài khoản</a></li>
+            </ul>
+        </div>
+        <div class="searchPanel">
+            <input type="text" name="searchInput" placeholder="Tìm kiếm">
+            <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                <option value="" selected>Chọn tỉnh thành</option>
+            </select>
+
+            <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                <option value="" selected>Chọn quận huyện</option>
+            </select>
+
+            <select class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                <option value="" selected>Chọn phường xã</option>
+            </select>
+            <a href="#" id="btnTK">Tìm kiếm</a>
+        </div>
+        <div class="lb1">
+            <h1>Nhà cho thuê ở khu vực Hồ Chí Minh - Sài Gòn</h1>
+            <hr style="width: 180px;background: #FF9300; float: left; height: 5px;margin-top: -15px; border: none;">
+        </div>
+        <div class="container">
+            <div class="leftCon">
+                <div class="arrange">
+                    Sắp xếp: <a href="#">Mặc định</a>
+                    <a href="#">Mới nhất</a>
+                    <a href="#">Có video</a>
+                </div>
+                <div class="content">
+                    <div class="nt1">
+                        <hr>
+                        <a href="sanphamchitiet.html">
+                            <img src="img/nt1.jpg">
+                            <p class="Name">Cho thuê phòng trọ giá sinh viên gần CVPMQT quận 12</p>
+                            <b class="Price">2.4</b> <a
+                                style="color: green; font-weight: ">triệu/tháng</a><strong><strong
+                                    class="acreage">28</strong>m<sup>2</sup></strong>
+                            <p>Địa chỉ: <a class="address">97/02 Đường Đông Hưng Thuận 5, Phường Đông Hưng Thuận, Quận
+                                    12, Hồ Chí Minh</a></p>
+                            Mô tả:
+                            <p class="describe">Cho thuê phòng ở phường Đông Hưng Thuận, Quận 12<br>
+                                Gần trường fPT, CVPMQT, KDC AN SƯƠNG<br>
+                                Nội thất: Kệ bếp, gác</p>
+                            <a class="themYT" href="#">Thêm vào mục yêu thích</a>
+                        </a>
+
+                    </div>
+                    <div class="nt1">
+                        <hr>
+                        <a href="sanphamchitiet.html">
+                            <img src="img/nt1.jpg">
+                            <p class="Name">Cho thuê phòng trọ giá sinh viên gần CVPMQT quận 12</p>
+                            <b class="Price">2.4</b> <a
+                                style="color: green; font-weight: ">triệu/tháng</a><strong><strong
+                                    class="acreage">28</strong>m<sup>2</sup></strong>
+                            <p>Địa chỉ: <a class="address">97/02 Đường Đông Hưng Thuận 5, Phường Đông Hưng Thuận, Quận
+                                    12, Hồ Chí Minh</a></p>
+                            Mô tả:
+                            <p class="describe">Cho thuê phòng ở phường Đông Hưng Thuận, Quận 12<br>
+                                Gần trường fPT, CVPMQT, KDC AN SƯƠNG<br>
+                                Nội thất: Kệ bếp, gác</p>
+                            <a class="themYT" href="#">Thêm vào mục yêu thích</a>
+                        </a>
+
+                    </div>
+                    <div class="nt1">
+                        <hr>
+                        <a href="sanphamchitiet.html">
+                            <img src="img/nt1.jpg">
+                            <p class="Name">Cho thuê phòng trọ giá sinh viên gần CVPMQT quận 12</p>
+                            <b class="Price">2.4</b> <a
+                                style="color: green; font-weight: ">triệu/tháng</a><strong><strong
+                                    class="acreage">28</strong>m<sup>2</sup></strong>
+                            <p>Địa chỉ: <a class="address">97/02 Đường Đông Hưng Thuận 5, Phường Đông Hưng Thuận, Quận
+                                    12, Hồ Chí Minh</a></p>
+                            Mô tả:
+                            <p class="describe">Cho thuê phòng ở phường Đông Hưng Thuận, Quận 12<br>
+                                Gần trường fPT, CVPMQT, KDC AN SƯƠNG<br>
+                                Nội thất: Kệ bếp, gác</p>
+                            <a class="themYT" href="#">Thêm vào mục yêu thích</a>
+                        </a>
+
+                    </div>
+                    <div class="nt1">
+                        <hr>
+                        <a href="sanphamchitiet.html">
+                            <img src="img/nt1.jpg">
+                            <p class="Name">Cho thuê phòng trọ giá sinh viên gần CVPMQT quận 12</p>
+                            <b class="Price">2.4</b> <a
+                                style="color: green; font-weight: ">triệu/tháng</a><strong><strong
+                                    class="acreage">28</strong>m<sup>2</sup></strong>
+                            <p>Địa chỉ: <a class="address">97/02 Đường Đông Hưng Thuận 5, Phường Đông Hưng Thuận, Quận
+                                    12, Hồ Chí Minh</a></p>
+                            Mô tả:
+                            <p class="describe">Cho thuê phòng ở phường Đông Hưng Thuận, Quận 12<br>
+                                Gần trường fPT, CVPMQT, KDC AN SƯƠNG<br>
+                                Nội thất: Kệ bếp, gác</p>
+                            <a class="themYT" href="#">Thêm vào mục yêu thích</a>
+                        </a>
+
+                    </div>
+                    <div class="nt1">
+                        <hr>
+                        <a href="sanphamchitiet.html">
+                            <img src="img/nt1.jpg">
+                            <p class="Name">Cho thuê phòng trọ giá sinh viên gần CVPMQT quận 12</p>
+                            <b class="Price">2.4</b> <a
+                                style="color: green; font-weight: ">triệu/tháng</a><strong><strong
+                                    class="acreage">28</strong>m<sup>2</sup></strong>
+                            <p>Địa chỉ: <a class="address">97/02 Đường Đông Hưng Thuận 5, Phường Đông Hưng Thuận, Quận
+                                    12, Hồ Chí Minh</a></p>
+                            Mô tả:
+                            <p class="describe">Cho thuê phòng ở phường Đông Hưng Thuận, Quận 12<br>
+                                Gần trường fPT, CVPMQT, KDC AN SƯƠNG<br>
+                                Nội thất: Kệ bếp, gác</p>
+                            <a class="themYT" href="#">Thêm vào mục yêu thích</a>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="rightCon">
+                <div class="contentRight">
+                    <h2>Xem theo diện tích</h2>
+                    <a class="daugach">>Dưới 20m<sup>2</sup></a><a class="daugach">>Dưới 30m<sup>2</sup></a><br><br>
+                    <a class="daugach">>Dưới 40m<sup>2</sup></a><a class="daugach">>Trên 50m<sup>2</sup></a><br>
+                    <br>
+                    <div class="slider">
+                        <h2 style="text-align: center">Xem theo giá</h2>
+                        <input type="range" min="0" max="10000" value="50" class="slider-range" id="myRange"
+                            style="width:  250px">
+                        <p>Giá trị: <span id="value"></span></p>
+                    </div>
+                </div>
+                <div class="middleRight">
+                    <br>
+                    <h2>Xem theo tiện ích xung quanh</h2>
+                    <div class="checkboxContainer">
+                        <label class="checkboxLabel">
+                            <input type="checkbox" name="myCheckbox1">
+                            <span>Gần siêu thị</span>
+                        </label>
+                        <label class="checkboxLabel">
+                            <input type="checkbox" name="myCheckbox2">
+                            <span>Gần chợ</span>
+                        </label>
+                        <label class="checkboxLabel">
+                            <input type="checkbox" name="myCheckbox3">
+                            <span>Gần trường học</span>
+                        </label>
+                        <label class="checkboxLabel">
+                            <input type="checkbox" name="myCheckbox4">
+                            <span>Gần bệnh viện</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="bottomRight">
+                    <br>
+                    <h2 style="text-align: center">Có thể bạn quan tâm</h2>
+                    <a href="mauhopdong.html">> Mẫu hợp đồng cho thuê nhà trọ</a>
+                    <hr style="width: 95%">
+                    <a href="luaDao.html">> Cẩn thận cách kiểu lừa đảo khi thuê nhà trọ</a>
+                    <hr style="width: 95%">
+                    <a href="#">> Kinh nghiệm thuê phòng trọ cho sinh viên</a>
+                    <hr style="width: 95%">
+                    <a href="mauhopdong.html">> Hướng dẫn chấm dứt hợp đồng</a>
+                    <hr style="width: 95%">
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col first">
+                        <h3 class="footer_title">THÔNG TIN LIÊN HỆ</h3>
+                        <img class="logo" src="img/logo của kiệt căn nhà.jpg" alt>
+                        <div class="footer_info align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <p class="footer_location-desc"> 120 Lê Văn Việt, P. Hiệp Phú, TP. Thủ Đức, TP. HCM
+                            </p>
+                        </div>
+                        <div class="footer_info align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p clas="footer_location-desc"> fpolyhouse.vn@gmail.com</p>
+                        </div>
+                        <div class="footer_info align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="footer_location-desc">0366346126 - Ms. Nguyên</p>
+                        </div>
+                    </div>
+                    <div class="footer-col second">
+                        <h3 class="footer_title">Liên hệ với chúng tôi</h3>
+                        <ul class="footer_social">
+                            <li>
+                                <a href="#">
+                                    <img src="img/facebook.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/zalo-logo.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/instagram.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/youtube.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col seconds">
+                        <h3 class="footer-title">Hỗ trợ khách hàng</h3c>
+                        <ul class="footer-menu">
+                            <li> <a href="#">Câu hỏi thường gặp</a> </li>
+                            <li> <a href="#">Hướng dẫn đăng tin</a> </li>
+                            <li> <a href="#">Quy định đăng tin</a> </li>
+                            <li> <a href="#">Bảng giá dịch vụ</a> </li>
+                            <li> <a href="#">Giải quyết khiếu nại</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col thirst">
+                        <h3 class="footer_title">Phương thức thanh toán</h3>
+                        <ul class="footer_social">
+                            <li>
+                                <a href="#">
+                                    <img src="img/visa.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/vcb.jpeg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/momo.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/tienmat.jpeg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer_coppyright">&copy; 2024 Nhà trọ FPOLY. Bảo lưu mọi quyền.</p>
+            </div>
+        </footer>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
